@@ -18,7 +18,6 @@ const ANIMATION_MAP = {
 
 const Routes = withRouter(({location, history}) => (
   <TransitionGroup
-    className={'router-wrapper'}
     childFactory={child => React.cloneElement(
       child,
       {classNames: ANIMATION_MAP[history.action]}
