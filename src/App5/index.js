@@ -15,7 +15,7 @@ const ANIMATION_MAP = {
   PUSH: 'forward',
   POP: 'back'
 }
-// TODO: I want get history.action in VPS
+// TODO: I want get history.action in @vite-plugin-ssr/examples/react-full/
 const Routes = withRouter(({location, history}) => (
   <TransitionGroup
     childFactory={child => React.cloneElement(
